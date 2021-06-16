@@ -22,6 +22,8 @@ namespace Smasgl.Model.PersonLib
             {
                 if (string.IsNullOrWhiteSpace(value))
                     throw new Exception($"{nameof(Person)}:{nameof(FirstName)}");
+
+                this.firstname = value;
             }
         }
         public string LastName
@@ -31,6 +33,8 @@ namespace Smasgl.Model.PersonLib
             {
                 if (string.IsNullOrWhiteSpace(value))
                     throw new Exception($"{nameof(Person)}:{nameof(LastName)}");
+
+                this.lastName = value;
             }
         }
         public override string ToString()
