@@ -17,6 +17,6 @@ script:
   - dotnet build -c Release
   - |
     dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:Exclude="[xunit*]*" /p:excludebyfile="**/*.Designer.cs"
-    bash <(curl -s https://app.codecov.io/bash)> -Z
+    bash <(curl -s https://app.codecov.io/bash) -Z
     
     
