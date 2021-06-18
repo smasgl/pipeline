@@ -31,7 +31,7 @@ before_deploy:
   - set -e
   - dotnet publish PipelineLib.sln -c Release -o output
   - dotnet pack PipelineLib.sln -c Release -o nuget
-  - tip ./Pipeline.zip ./output/* ./nuget/*
+  - zip ./Pipeline.zip ./output/* ./nuget/*
   - tar cfvz ./Pipeline.tar.gz ./output ./nuget
 
 deploy:
