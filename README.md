@@ -10,3 +10,4 @@
 Example CI/CD project
 
 ## PersonLib
+[![NuGet](https://img.shields.io/nuget/dt/Smasgl.Model.PersonLib.svg)](https://www.nuget.org/packages/Smasgl.Model.PersonLib/)
